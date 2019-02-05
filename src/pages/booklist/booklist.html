@@ -15,12 +15,8 @@
             icon-start
             *ngFor="let book of booksList; let i = index"
             (click)="onLoadAppareil(i)">
-      <ion-icon name="power" [color]="book.isOn ? 'secondary' : 'danger'"></ion-icon>
+      <ion-icon name="book" [color]="book.isOn ? 'secondary' : 'danger'"></ion-icon>
       {{ book.name }}
     </button>
   </ion-list>
 </ion-content>
-
-<ion-footer padding>
-  <p>Bas de page</p>
-</ion-footer>

@@ -7,31 +7,78 @@ import { Cd } from "../models/Cd";
 export class CdService {
     cdList: Cd[] = [
         {
-            name: 'pagne noire',
+            name: 'Rumours',
             description: [
-                'titre: modeste',
-                'resume: loren ',
-                'annee: 1920'
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
             ],
             isOn: true
         },
         {
-            name: 'pagne noire',
+            name: 'Bat Out of Hell',
             description: [
-                'titre: modeste',
-                'resume: loren ',
-                'annee: 1920'
-            ],
-            isOn: true
-        },
-        {
-            name: 'pagne noire',
-            description: [
-                'titre: modeste',
-                'resume: loren ',
-                'annee: 1920'
+                'Artiste: Meat Loaf',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
             ],
             isOn: false
         },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: false
+        },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: true
+        },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: true
+        },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: false
+        },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: true
+        },
+        {
+            name: 'Rumours',
+            description: [
+                'Artiste: Fleetwood Mac',
+                'anneé: 1977 ',
+                'resume: Bat Out of Hell est le premier album de Meat Loaf, sorti le 21 octobre 1977'
+            ],
+            isOn: false
+        },
+        
+        
     ];
 }
