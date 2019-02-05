@@ -11,10 +11,10 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item
+    <button ion-item name="book" [color]="book.isOn ? 'list-on' : 'list-of'"
             icon-start
             *ngFor="let book of booksList; let i = index"
-            (click)="onLoadAppareil(i)">
+            (click)="onLoadAppareil(i)" >
       <ion-icon name="book" [color]="book.isOn ? 'secondary' : 'danger'"></ion-icon>
       {{ book.name }}
     </button>

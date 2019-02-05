@@ -1,0 +1,15 @@
+page-cdlist {
+
+    .is-on {
+         ion-item {
+        //   background-color: color($colors, secondary-light);
+        background-color: rgb(200, 216, 206);
+        }
+      }
+      .is-off {
+         ion-item {
+        //   background-color: color($colors, danger-light);
+        background-color: rgb(168, 133, 133);
+        }
+      }
+}

@@ -11,7 +11,7 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item
+    <button ion-item name="cd" [color]="cd.isOn ? 'list-on' : 'list-of'"
             icon-start
             *ngFor="let cd of cdList; let i = index"
             (click)="onLoadAppareil(i)">
