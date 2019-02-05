@@ -17,7 +17,6 @@ import { LendCdPage } from '../pages/cdlist/lendcd/lendcd';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { BooksService } from '../services/books.service';
-import { CdService } from '../services/cd.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +49,6 @@ import { CdService } from '../services/cd.service';
     StatusBar,
     SplashScreen,
     BooksService,
-    CdService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

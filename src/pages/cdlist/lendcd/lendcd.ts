@@ -1,7 +1,9 @@
 import { Component } from "@angular/core";
-import { Cd } from "../../../models/Cd";
+import { Book } from "../../../models/book";
 import { NavParams, ViewController } from "ionic-angular";
-import { CdService } from "../../../services/cd.service";
+// import { CdService } from "../../../services/cd.service";
+import  { BooksService } from '../../../services/books.service';
+
 
 
 
@@ -15,16 +17,16 @@ import { CdService } from "../../../services/cd.service";
 export class LendCdPage {
     
     index: number;
-    cd: Cd;
+    cd: Book;
 
   constructor(public navParams: NavParams,
               public viewCtrl: ViewController,
-              private cdService: CdService) {
+              private booksService: BooksService) {
   }
 
   ngOnInit() {
     this.index = this.navParams.get('index');
-    this.cd = this.cdService.cdList[this.index];
+    this.cd = this.booksService.cdList[this.index];
   }
 
   dismissModal() {

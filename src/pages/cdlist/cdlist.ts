@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 import { ModalController, MenuController } from "ionic-angular";
-import { CdService } from "../../services/cd.service";
-import { Cd } from "../../models/Cd";
+import  { BooksService } from '../../services/books.service';
+// import { Cd } from "../../models/Cd";
+import { Book } from "../../models/book";
 import { LendCdPage } from "./lendcd/lendcd";
 
 
@@ -15,13 +16,13 @@ import { LendCdPage } from "./lendcd/lendcd";
 
 export class CdListPage {
 
-    cdList: Cd[];
+    cdList: Book[];
 
     constructor( private modalCtrl: ModalController,
-         private cdService: CdService, private menuCtrl: MenuController) {}
+         private booksService: BooksService, private menuCtrl: MenuController) {}
 
     ionViewWillEnter(){
-     this.cdList = this.cdService.cdList.slice();
+     this.cdList = this.booksService.cdList.slice();
     }
 
     onLoadAppareil(index: number) {
